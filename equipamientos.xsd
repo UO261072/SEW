@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="equipamientos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="equipamiento" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="equipamiento">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nivel" />
+				<xs:element ref="clase" />
+				<xs:element ref="armas" />
+				<xs:element ref="armaduras" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nivel" type="xs:string" />
+	<xs:element name="clase">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="nivel" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="armas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" ref="primaria" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="secundaria" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="armaduras">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" ref="casco" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="pecho" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="brazoIz" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="brazoDer" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="piernas" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="primaria">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="aumentos" />
+			</xs:sequence>
+			<xs:attribute name="nombre" type="xs:string" use="required" />
+			<xs:attribute name="tipo" type="xs:string" use="required" />
+			<xs:attribute name="fabricante" type="xs:string" use="required" />
+			<xs:attribute name="ataque" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="secundaria">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="aumentos" />
+			</xs:sequence>
+			<xs:attribute name="nombre" type="xs:string" use="required" />
+			<xs:attribute name="tipo" type="xs:string" use="required" />
+			<xs:attribute name="fabricante" type="xs:string" use="required" />
+			<xs:attribute name="ataque" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="casco">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="aumentos" />
+			</xs:sequence>
+			<xs:attribute name="nombre" type="xs:string" use="required" />
+			<xs:attribute name="defensa" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="pecho">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="aumentos" />
+			</xs:sequence>
+			<xs:attribute name="nombre" type="xs:string" use="required" />
+			<xs:attribute name="defensa" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="brazoIz">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="aumentos" />
+			</xs:sequence>
+			<xs:attribute name="nombre" type="xs:string" use="required" />
+			<xs:attribute name="defensa" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="brazoDer">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="aumentos" />
+			</xs:sequence>
+			<xs:attribute name="nombre" type="xs:string" use="required" />
+			<xs:attribute name="defensa" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="piernas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="aumentos" />
+			</xs:sequence>
+			<xs:attribute name="nombre" type="xs:string" use="required" />
+			<xs:attribute name="defensa" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="aumentos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="aumento" />
+			</xs:sequence>
+			<xs:attribute name="huecos" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="aumento" type="xs:string" />
+</xs:schema>

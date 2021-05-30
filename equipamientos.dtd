@@ -1,0 +1,44 @@
+<!ELEMENT equipamientos (equipamiento+)>
+<!ELEMENT equipamiento (nivel, clase, armas, armaduras)>
+<!ELEMENT nivel (#PCDATA)>
+<!ELEMENT clase (#PCDATA)>
+<!ELEMENT armas (primaria?,secundaria?)>
+<!ELEMENT armaduras (casco?,pecho?,brazoIz?,brazoDer?,piernas?)>
+<!ELEMENT primaria (aumentos)>
+<!ELEMENT secundaria (aumentos)>
+<!ELEMENT casco (aumentos)>
+<!ELEMENT pecho (aumentos)>
+<!ELEMENT brazoIz (aumentos)>
+<!ELEMENT brazoDer (aumentos)>
+<!ELEMENT piernas (aumentos)>
+<!ELEMENT aumentos (aumento*)>
+<!ELEMENT aumento (#PCDATA)>
+<!ATTLIST clase 
+	nivel CDATA #REQUIRED>
+<!ATTLIST primaria 
+	nombre CDATA #REQUIRED
+	tipo CDATA #REQUIRED
+	fabricante CDATA #REQUIRED
+	ataque CDATA #REQUIRED>
+<!ATTLIST secundaria 
+	nombre CDATA #REQUIRED
+	tipo CDATA #REQUIRED
+	fabricante CDATA #REQUIRED
+	ataque CDATA #REQUIRED>
+<!ATTLIST aumentos 
+	huecos CDATA #REQUIRED>
+<!ATTLIST casco 
+	nombre CDATA #REQUIRED
+	defensa CDATA #REQUIRED>
+<!ATTLIST pecho 
+	nombre CDATA #REQUIRED
+	defensa CDATA #REQUIRED>
+<!ATTLIST brazoIz 
+	nombre CDATA #REQUIRED
+	defensa CDATA #REQUIRED>
+<!ATTLIST brazoDer 
+	nombre CDATA #REQUIRED
+	defensa CDATA #REQUIRED>
+<!ATTLIST piernas 
+	nombre CDATA #REQUIRED
+	defensa CDATA #REQUIRED>

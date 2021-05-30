@@ -1,0 +1,49 @@
+
+
+
+body section {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 20px;
+}
+body h1{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+h2{
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+
+body section section {
+	display: grid;
+	grid-template-columns: auto;	
+}
+
+#habilidad{
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+
+header{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+nav{
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+nav{
+	display: grid;
+	grid-template-columns: auto;
+}
+nav a{
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+input{
+	text-align:center;
+}
+
+

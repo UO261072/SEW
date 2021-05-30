@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE equipamientos SYSTEM "equipamientos.dtd">
+<equipamientos>
+	<equipamiento>
+		<nivel>35</nivel>
+		<clase nivel="8">Drifter</clase>
+		<armas>
+			<primaria nombre="Espada sagrada" tipo="Espada corta" fabricante="Sakura Logistics" ataque="10">
+				<aumentos huecos="3">
+					<aumento>Potencia+</aumento>
+					<aumento>Curacion+</aumento>
+					<aumento>Ataque++</aumento>
+				</aumentos>
+			</primaria>
+			<secundaria nombre="Railgun gravitatoria" tipo="Railgun" fabricante="Man'on Corp." ataque="20">
+				<aumentos huecos="2">
+					<aumento>Potencia+</aumento>
+					<aumento>Curacion+</aumento>
+				</aumentos>
+			</secundaria>
+		</armas>
+		<armaduras>
+			<casco nombre="Casco 1" defensa="10">
+				<aumentos huecos="3">
+					<aumento>Potencia+</aumento>
+					<aumento>Curacion+</aumento>
+					<aumento>Ataque++</aumento>
+				</aumentos>
+			</casco>
+			<pecho nombre="Pecho 1" defensa="10">
+				<aumentos huecos="3">
+					<aumento>Defensa Especial++</aumento>
+					<aumento>TP++</aumento>
+					<aumento>TP++</aumento>
+				</aumentos>
+			</pecho>
+			<brazoIz nombre="Brazo Izquierdo 1" defensa="10">
+				<aumentos huecos="2">
+					<aumento>Curacion+</aumento>
+				</aumentos>
+			</brazoIz>
+			<brazoDer nombre="Brazo Derecho 1" defensa="10">
+				<aumentos huecos="3">
+					<aumento>Gravedad++</aumento>
+					<aumento>Fisico</aumento>
+					<aumento>Enfriamiento++</aumento>
+				</aumentos>
+			</brazoDer>
+			<piernas nombre="Piernas 1" defensa="10">
+				<aumentos huecos="1">
+				</aumentos>
+			</piernas>
+		</armaduras>
+	</equipamiento>
+</equipamientos>

@@ -1,0 +1,65 @@
+body /*Especificidad = 1*/{
+    font: 400 15px Tahoma,cursive,"Familia sans-serif";
+    line-height: 1.8;
+    color:#000000;
+	background-color:#ffffff; 
+}
+h1 /*Especificidad = 1*/{
+    background-color:#7FFFD4; 
+    color: #000000;
+    text-transform: uppercase;
+    padding: 100px 25px;
+    text-align: center;     
+}
+  
+h2 /*Especificidad = 1*/{
+	background-color:#00FFFF;
+	color: #000000;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h3 /*Especificidad = 1*/{
+	background-color:#A0F4A0;
+	color: #000000;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+li{
+	background-color:#A2C2D2;
+	color:#0000FF;
+}
+
+section ul /*Especifidad = 2*/{
+	background-color:#9932CC;
+	color:#000000;
+}
+
+table tbody/*Especifidad = 2*/{
+	background-color:#FFF0F5;
+	color:#000000;
+}
+
+section ul li/*Especificidad = 3*/{
+	background-color:#FFB6C1;
+	color:#191919;
+}
+
+tr td/*Especifidad = 2*/{
+	font-size:150%;
+}
+
+table tbody tr:first-of-type/*Especificidad = 3*/{
+	background-color:#48D1CC;
+	color:#000000;
+	font-weight:bold;
+	font-size:200%;
+}
+
+tr td:nth-child(1)/*Especifidad = 4*/{
+	background-color:#E6E6FA;
+	color:#000000;
+	
+}
+
+
+

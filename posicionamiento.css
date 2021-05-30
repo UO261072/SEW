@@ -1,0 +1,56 @@
+body /*Especificidad = 1*/{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+}
+nav{
+	display: grid;
+	grid-template-columns: auto;
+}
+nav a{
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+header /*Especificidad = 1*/{
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+main /*Especificidad = 1*/{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+}
+
+h1 /*Especificidad = 2*/{
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+main article,section /*Especificidad = 2*/{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+main aside /*Especificidad = 2*/{
+	grid-column-start:3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+body > section /*Especificidad = 2*/{
+	grid-column-start:1;
+	grid-column-end:4;
+}
+nav /*Especificidad = 1*/{
+	grid-column-start:1;
+	grid-column-end:4;
+}
+footer /*Especificidad = 1*/{
+	grid-column-start:1;
+	grid-column-end:4;
+}
+
+
+

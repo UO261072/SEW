@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Xenoblade Chronicles X</title>
+
+	<link rel="stylesheet" href="estilo.css" />
+	<link rel="stylesheet" href="posicionamientoCalculadora.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="Equipamiento.js"></script>
+</head>
+
+<body>
+
+
+	<header>Web sobre Xenoblade Chronicles X</header>
+	
+	<h1>Calculadora de Equipo</h1>
+	
+	<section>
+		<h2>Selector de equipo</h2>
+		<section>
+			<h3>Nivel</h3>
+			<input type="text" id="nivel" disabled />
+			<button onclick="e.añadirNivel(1)">1</button>
+			<button onclick="e.añadirNivel(10)">10</button>
+			<button onclick="e.añadirNivel(100)">100</button>
+		</section>
+		<section>
+			<h3>Arma principal</h3>
+			<input type="text" id="armaPri" disabled />
+			<button onclick="e.añadirArmaPri('Knife',10)">Knife</button>
+			<button onclick="e.añadirArmaPri('Longsword',10)">Longsword</button>
+			<button onclick="e.añadirArmaPri('Javelin',10)">Javelin</button>
+		</section>
+		<section>
+			<h3>Arma secundaria</h3>
+			<input type="text" id="armaSec" disabled />
+			<button onclick="e.añadirArmaSec('Assault Rifle',10)">Assault Rifle</button>
+			<button onclick="e.añadirArmaSec('Dual Guns',10)">Dual Guns</button>
+			<button onclick="e.añadirArmaSec('Sniper Rifle',10)">Sniper Rifle</button>
+		</section>
+		<section>
+			<h3>Casco</h3>
+			<input type="text" id="casco" disabled />
+			<button onclick="e.añadirCasco('Visor',10)">Visor</button>
+			<button onclick="e.añadirCasco('Goggles',10)">Goggles</button>
+			<button onclick="e.añadirCasco('Headwear',10)">Headwear</button>
+		</section>
+		<section>
+			<h3>Pecho</h3>
+			<input type="text" id="pecho" disabled />
+			<button onclick="e.añadirPecho('Vest',10)">Vest</button>
+			<button onclick="e.añadirPecho('Bodywear',10)">Bodywear</button>
+			<button onclick="e.añadirPecho('Armor',10)">Armor</button>
+		</section>
+		<section>
+			<h3>Brazo Izquierdo</h3>
+			<input type="text" id="brazoI" disabled />
+			<button onclick="e.añadirBrazoI('Guard',10)">Guard</button>
+			<button onclick="e.añadirBrazoI('Glove',10)">Glove</button>
+			<button onclick="e.añadirBrazoI('Armwear',10)">Armwear</button>
+		</section>
+		<section>
+			<h3>Brazo Derecho</h3>
+			<input type="text" id="brazoD" disabled />
+			<button onclick="e.añadirBrazoD('Guard',10)">Guard</button>
+			<button onclick="e.añadirBrazoD('Glove',10)">Glove</button>
+			<button onclick="e.añadirBrazoD('Armwear',10)">Armwear</button>
+		</section>
+		<section>
+			<h3>Pierna</h3>
+			<input type="text" id="piernas" disabled />
+			<button onclick="e.añadirPierna('Boots',10)">Boots</button>
+			<button onclick="e.añadirPierna('Footwear',10)">Footwear</button>
+			<button onclick="e.añadirPierna('Legwear',10)">Legwear</button>
+		</section>
+	</section>
+	<section>
+		<h2>Selector de habilidad</h2>
+		<input type="text" id="habilidad" disabled />
+		<button onclick="e.añadirHabilidad('Gravity Blast',10,10,'d')">Gravity Blast</button>
+		<button onclick="e.añadirHabilidad('Black Butterfly',100,1,'a')">Black Butterfly</button>
+		<button onclick="e.añadirHabilidad('Pathogen Blast',10,200,'a')">Pathogen Blast</button>
+		<button onclick="e.añadirHabilidad('Defense Blow',10,15,'d')">Pathogen Blast</button>
+	</section>
+	<section>
+		<h2>Importar XML</h2>
+		<input type="file" id="archivoTexto" onchange="lee.setArchivo(this.files);">
+	</section>
+	<section>
+		<h2>Daño Total</h2>
+		<input type="text" id="ataqueFinal" disabled />
+		<button id="button" onclick="e.calculoAtaqueFinal()">Calcular Daño</button>
+	</section>
+	<pre id="areaTexto"></pre>
+
+	<aside id="ubicacion">
+		<h2>Tiempo meteorologico en tu región</h2>
+		<input type="button" value="Obtener el tiempo meteorologico" onClick="miPosicion.verTodo('ubicacion');" />
+	</aside>
+	<nav>
+		<h2>Menu de navegacion</h2>
+		<a href="index.html">Pagina Principal</a>
+		<a href="historia.html">Historia</a>
+		<a href="monolithSoft.html">Contexto</a>
+		<a href="calculadoraDeDaño.html">Calculadora de Daño</a>
+		<a href="tablaObjetos.php">Tabla de obtencion de objetos</a>
+	</nav>
+
+	<footer>Web sobre Xenoblade Chronicles X</footer>
+
+</body>
+
+</html>
