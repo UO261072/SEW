@@ -15,7 +15,7 @@
     <section>
         <h1>Tabla de obtencion de objetos</h1>
         <p>Introduce el nombre del objeto que quieres buscar y pulsa enter</p>
-        <form name="form" action="" method="get">
+        <form name="form" method="get">
             <input type="text" name="subject" id="subject" value="Sakuraba Longsword">
             <input type="submit" value="Buscar">
         </form>
@@ -60,7 +60,8 @@
 		<a href="index.html">Pagina Principal</a>
 		<a href="historia.html">Historia</a>
 		<a href="monolithSoft.html">Contexto</a>
-		<a href="calculadoraDeDaño.html">Calculadora de Daño</a>
+        <a href="personajes.html">Personajes</a>
+		<a href="calculadoraDeDano.html">Calculadora de Daño</a>
 		<a href="tablaObjetos.php">Tabla de obtencion de objetos</a>
 	</nav>
 </body>

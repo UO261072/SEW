@@ -7,6 +7,8 @@
 	
 	<link rel="stylesheet" href="estilo.css"/>
 	<link rel="stylesheet" href="posicionamiento.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="Tiempo.js"></script>
 </head>
 
 <body>
@@ -17,7 +19,7 @@
 	<main>
 		
 		<section>
-			<h2>Cotennido</h2>
+			<h2>Cotenido</h2>
 			<p>
 				Esta pagina es a su vez una pequeña introduccion a Xenoblade Chronicles X y una herramienta que se puede utilizar para crear diferentes combinaciones de equipo 
 				dentro del juego.
@@ -26,14 +28,12 @@
 				La pagina esta estructurada en diferentes secciones, y todas seran accesibles desde el menu de navegacion de la parte inferior.
 			</p>
 		</section>
-		<aside>
-			<img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Xenoblade_Chronicles_X_-_Boxart.jpg/220px-Xenoblade_Chronicles_X_-_Boxart.jpg" alt="Imagen portada del videojuego"/>
-			<ul>
-				<li>Desarrollado por Monolith Soft</li>
-				<li>Dirigido por Tetsuya Takahashi</li>
-				<li>Platadorma: Wii U</li>
-			</ul>
+		
+		<aside id="ubicacion">
+			<h2>Tiempo meteorologico en tu región</h2>
+			<input class="meteo" type="button" value="Obtener el tiempo meteorologico" onClick="miPosicion.verTodo('ubicacion');" />
 		</aside>
+		
 	</main>
 	<section>
 		<h2>Trailer:</h2>
@@ -44,7 +44,8 @@
 		<a href="index.html">Pagina Principal</a>
 		<a href="historia.html">Historia</a>
 		<a href="monolithSoft.html">Contexto</a>
-		<a href="calculadoraDeDaño.html">Calculadora de Daño</a>
+        <a href="personajes.html">Personajes</a>
+		<a href="calculadoraDeDano.html">Calculadora de Daño</a>
 		<a href="tablaObjetos.php">Tabla de obtencion de objetos</a>
 	</nav>
 	
